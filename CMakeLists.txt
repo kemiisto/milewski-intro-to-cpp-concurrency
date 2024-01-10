@@ -13,3 +13,7 @@ add_executable(02-barrier-05 02/barrier-05.cpp)
 add_executable(02-function-object 02/function-object.cpp)
 add_executable(02-pass-args-01 02/pass-args-01.cpp)
 add_executable(02-pass-args-02 02/pass-args-02.cpp)
+
+add_executable(03-future 03/future.cpp)
+add_executable(03-future-exception 03/future-exception.cpp)
+add_executable(03-async 03/async.cpp)
