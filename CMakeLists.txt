@@ -17,3 +17,7 @@ add_executable(02-pass-args-02 02/pass-args-02.cpp)
 add_executable(03-future 03/future.cpp)
 add_executable(03-future-exception 03/future-exception.cpp)
 add_executable(03-async 03/async.cpp)
+
+add_executable(04-bad-pass 04/bad-pass.cpp)
+add_executable(04-bad-const 04/bad-const.cpp)
+add_executable(04-file-list 04/file-list.cpp)
