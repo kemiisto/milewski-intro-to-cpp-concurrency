@@ -32,7 +32,8 @@ auto list_dirs(std::vector<path> const& paths) {
 
 int main() {
     auto paths = std::vector<path>{};
-    for (directory_iterator it{R"(c:\Users\wildcat\Downloads)"}; it != directory_iterator{}; ++it) {
+    auto const root = R"(c:\Users\wildcat\Downloads)";
+    for (directory_iterator it{root}; it != directory_iterator{}; ++it) {
         if (is_directory(it->status())) {
             paths.push_back(it->path());
         }
