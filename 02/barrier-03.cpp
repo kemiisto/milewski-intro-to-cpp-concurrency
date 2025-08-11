@@ -4,7 +4,7 @@
 
 int main() {
     auto threads = std::vector<std::thread>{};
-    for (size_t i = 0; i < 16; ++i) {
+    for (std::size_t i = 0; i < 16; ++i) {
         threads.emplace_back([&] {
             std::cout << "Hello from thread " << i << std::endl;
         });
