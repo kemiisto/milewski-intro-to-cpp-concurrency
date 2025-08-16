@@ -9,7 +9,7 @@ std::string fun(bool flag) {
         return "Message from worker.";
     } else {
         std::cout << "Worker throwing.\n";
-        throw std::exception{"Exception from thread."};
+        throw std::runtime_error{"Exception from thread."};
     }
 }
 

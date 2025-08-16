@@ -5,7 +5,7 @@
 class fun_obj {
 public:
     explicit fun_obj(int i) : i_{i} {}
-    void operator()() {
+    void operator()() const {
         std::cout << "Hello from thread!\n";
     }
 private:

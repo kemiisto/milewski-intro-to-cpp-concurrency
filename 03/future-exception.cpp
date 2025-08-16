@@ -6,7 +6,7 @@
 void fun(std::promise<std::string>&& pr) {
     std::cout << "Worker throwing.\n";
     try {
-        throw std::exception{"Exception from thread."};
+        throw std::runtime_error{"Exception from thread."};
     } catch (...) {
         pr.set_exception(std::current_exception());
     }
